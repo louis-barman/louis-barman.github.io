@@ -4,20 +4,19 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>faq</title>
+  <title>PianoBooster FAQ</title>
   <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
       div.column{display: inline-block; vertical-align: top; width: 50%;}
   </style>
-  <link rel="stylesheet" href="ref.css" />
-  <link rel="stylesheet" href="pb.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/pb.css">
   <style>
   @media (min-width: 1000px) {
   .customclass {
@@ -27,56 +26,53 @@
   </style>
 </head>
 <body>
-<div class="container customclass px-0">
+<div class="container-lg customclass px-0">
+<nav class="navbar navbar-expand-md navbar-dark">
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark ">
-
-  <a class="navbar-brand" href="index2.html"> <img src="images/logo64x64.png" alt="logo" style="width:40px;"></a>
-  <a class="navbar-brand" href="index2.html">Piano Booster</a>
+  <a class="navbar-brand" href="index.html"> <img src="images/logo64x64.png" alt="logo" style="width:40px;"></a>
+  <a class="navbar-brand" href="index.html">Piano Booster</a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link" href="screenshots.html">Screen Shots</a></li>
-      <!-- <li class="nav-item"><a class="nav-link" href="index2.html#features">Features</a></li> -->
-   <!-- Dropdown -->
+    <li class="nav-item"><a class="nav-link" href="screenshots.html">Screen Shots</a></li>
     <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-        Music
-      </a>
+      <a class="nav-link dropdown-toggle" href="music-info.html" id="navbardrop" data-toggle="dropdown">Music</a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="music.html">Music Info</a>
+        <a class="dropdown-item" href="music-info.html">Music Info</a>
         <a class="dropdown-item" href="Beginner Course.html">Beginner Course</a>
         <a class="dropdown-item" href="Booster Music.html">Booster Course</a>
       </div>
     </li>
-     <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
-     <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
-      <li class="nav-item"><a class="nav-link" href="http://piano-booster.2625608.n2.nabble.com/Piano-Booster-Users-f1591936.html">Users Forum</a></li>
-      <li class="nav-item"><a class="nav-link" href="http://piano-booster.2625608.n2.nabble.com/Piano-Booster-Development-f2625691.html">Development</a></li>
-
-
-
-
+    <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
+    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+    <li class="nav-item"><a class="nav-link" href="http://piano-booster.2625608.n2.nabble.com/Piano-Booster-Users-f1591936.html">Users Forum</a></li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="music-info.html" id="navbardrop" data-toggle="dropdown">Development</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="developer-info.html">Developer Info</a>
+        <a class="dropdown-item" href="http://piano-booster.2625608.n2.nabble.com/Piano-Booster-Development-f2625691.html">Dev forum</a>
+        <a class="dropdown-item" href="https://github.com/pianobooster/PianoBooster">GitHub</a>
+      </div>
+    </li>
     </ul>
   </div>
 </nav>
 <br>
 
-<div class="container">
-
-<h1>Frequently Asked Questions</h1>
-
-<p><em>Contents</em></p>
+<div class="container-lg">
+<header id="title-block-header">
+<h1 class="title">Frequently Asked Questions</h1>
+</header>
 <nav id="TOC">
 <ul>
 <li><a href="#where-are-the-music-files">Where are the music files?</a></li>
 <li><a href="#there-is-no-sound-what-is-wrong">There is no sound, what is wrong?</a></li>
 <li><a href="#how-do-i-connect-a-midi-piano-keyboard">How do I connect a MIDI piano keyboard?</a></li>
-<li><a href="#does-pianobooster-work-with-jack">Does PianoBooster work with Jack?</a></li>
 <li><a href="#will-piano-booster-work-with-a-real-piano">Will Piano Booster work with a real piano?</a></li>
+<li><a href="#does-pianobooster-work-with-jack">Does PianoBooster work with JACK?</a></li>
 <li><a href="#how-do-i-start-start-a-sound-generator-on-linux">How do I start start a sound generator on Linux?</a></li>
 <li><a href="#what-is-the-latency-fix">What is the latency fix?</a></li>
 </ul>
@@ -87,10 +83,10 @@
 <p>First insure that you have installed the latest version of Piano Booster that includes the integrated FluidSynth sound generator. To check this open the Piano Booster MIDI setup dialogue window and confirm there is a FluidSynth tab shown. You also need to ensure that there is a SoundFont file loaded, the recommended sound font is called <code>FluidR3_GM.sf2</code>.</p>
 <h2 id="how-do-i-connect-a-midi-piano-keyboard">How do I connect a MIDI piano keyboard?</h2>
 <p>First plug the MIDI keyboard into your PC, for older MIDI keyboards that do not use USB MIDI you will need to use a MIDI adaptor. After connecting the MIDI keyboard open the Piano Booster MIDI setup menu and then select the MIDI input interface that matches your keyboard.</p>
-<h2 id="does-pianobooster-work-with-jack">Does PianoBooster work with Jack?</h2>
-<p>JACK is not required for Piano Booster to work correctly since Piano Booster can already talk directly to a MIDI sound generator and a MIDI keyboard. JACK is mainly used in advanced music studio setups where there are multiple different sound sources inputs and outputs that need connecting together. JACK is also required on BSD Unix. Piano Booster is not normally compiled with support for JACK so if you really want to use JACK you will need to recompile PianoBooster from the source code.</p>
 <h2 id="will-piano-booster-work-with-a-real-piano">Will Piano Booster work with a real piano?</h2>
-<p>No, it will only work with a MIDI piano keyboard. As this is technically very difficult there are no plans to add this feature.</p>
+<p>No, it will only work with a MIDI piano keyboard. As this is technically very difficult there are no plans to add this feature. A MIDI keyboard is recommended and then you can transfer your skills back to the real piano.</p>
+<h2 id="does-pianobooster-work-with-jack">Does PianoBooster work with JACK?</h2>
+<p>JACK is not required for Piano Booster to work correctly since Piano Booster can already talk directly to a MIDI sound generator and a MIDI keyboard. JACK is mainly used in advanced music studio setups where there are multiple different sound sources inputs and outputs that need connecting together. JACK is also required on BSD Unix. Piano Booster is not normally compiled with support for JACK so if you really want to use JACK you will need to recompile PianoBooster from the source code.</p>
 <h2 id="how-do-i-start-start-a-sound-generator-on-linux">How do I start start a sound generator on Linux?</h2>
 <p>If you don’t have a version of PianoBooster that includes the integrated FluidSynth (recommended) you can start FluidSynth manually. First install the FluidSynth <code>fluidsynth</code> and the GM sound font <code>fluid-soundfont-gm</code> packages and then run the following command line:</p>
 <pre><code>fluidsynth -g 1.0 -a alsa -o midi.alsa_seq.id=fs2 /usr/share/sounds/sf2/FluidR3_GM.sf2

@@ -1,6 +1,8 @@
-
 @import url(html4css1.css);
 @import url(ref.css);
+/* ZZ
+ * @import url(navbar.css);
+ * */
 
 
 pre {
@@ -21,12 +23,13 @@ pre {
     margin-left: 0 ;
     margin-right: 0 ;
 }
+
 code {
     white-space:normal;
 }
 
 h1 a.toc-backref, h2 a.toc-backref, h3 a.toc-backref, h4 a.toc-backref   {
-  color: #6e7e97;
+  color: #274f83;
 }
 
 h1 a.toc-backref  {
@@ -46,8 +49,15 @@ a.toc-backref {
 
 .topic-title a{
     color: black;
-
 }
 
+.sheet-music img {
+    border-style: none;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
 
-
+.navbar {
+  background-color: #012d68;
+}
