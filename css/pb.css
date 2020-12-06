@@ -1,9 +1,5 @@
 @import url(html4css1.css);
 @import url(ref.css);
-/* ZZ
- * @import url(navbar.css);
- * */
-
 
 pre {
     background-color:#F0F0F0;
@@ -14,12 +10,11 @@ pre {
     line-height:100%;
     margin-bottom:4px;
     margin-top:4px;
-    overflow:auto;
+     overflow: scroll;
     padding:5px;
     padding-top:15px;
     padding-bottom:15px;
     white-space:normal;
-    width:98%;
     margin-left: 0 ;
     margin-right: 0 ;
 }
